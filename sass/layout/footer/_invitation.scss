@@ -1,12 +1,25 @@
 .invitation {
-  @include justFlex(flex);
 
-   flex-direction: column;
-   align-items: baseline;
+  @media screen and (min-width: 480px){
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px){
+    @include justFlex(flex);
+
+    flex-direction: column;
+    align-items: baseline;
+  }  
  }
  
  .invitation__title {
-   @include justFlex(flex);
+  
    @include fonts(14px, 16px, 700);
 
    margin-bottom: 20px;
@@ -20,6 +33,19 @@
   &:focus {
      color: var(--additional-txt-cl);
    }
+
+   @media screen and (min-width: 480px){
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px){
+    @include justFlex(flex);
+  }
+
+  @media screen and (min-width: 1200px){
+    @include justFlex(flex);
+  }  
  }
  
  .invitation__list {

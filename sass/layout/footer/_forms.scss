@@ -1,7 +1,13 @@
 .footer-form--container {
    display: block;
+
+   @media screen and (min-width: 1200px) {
+   @include justFlex(flex);
+
    width: 570px;
    margin-left: 93px;
+   }
+
  }
  
  .footer-form__title {
@@ -16,12 +22,37 @@
    &:focus {
      color: var(--additional-txt-cl);
    }
+   @media screen and (min-width: 480px){
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px){
+    @include justFlex(flex);
+  }
+
+  @media screen and (min-width: 1200px){
+    @include justFlex(flex);
+  }
  }
  
  .footer-form__container--group {
-  @include justFlex(flex);
 
-   gap: 12px;
+  @media screen and (min-width: 480px){
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px){
+    @include justFlex(flex);
+
+    gap: 12px;
+  }
+
  }
  
  .footer-form__label {

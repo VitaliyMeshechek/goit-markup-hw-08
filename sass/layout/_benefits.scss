@@ -1,22 +1,50 @@
 .benefits {
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: 60px;
+   padding-bottom: 60px;
  
    background-color: var(--additional-bg-cl);
+
+   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
  }
 
  .benefits__list {
   @extend %reset-list;
-  @include centeredFlex(flex); 
-  
-   gap: 30px;
-   margin: 0;
+  gap: 30px;
+  margin: 0;
+
+  @media screen and (min-width: 480px) {
+    @include centeredFlex(flex);
+    flex-wrap: wrap;
+    text-align: center; 
+   }
+
+   @media screen and (min-width: 768px) {
+    @include centeredFlex(flex);
+     
+   }
+
+   @media screen and (min-width: 1200px) {
+    @include centeredFlex(flex);
+     
+   } 
  }
  
  .benefits__item {
-  @include justFlex(flex);
-  
-   padding: 25px 100px;
-   background-color: var(--grey-bg-additional-cl);
-   margin-bottom: 30px;
+  background-color: var(--grey-bg-additional-cl);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    padding: 25px 190px; 
+   }
+
+   @media screen and (min-width: 768px) {
+    padding: 25px 142px; 
+   }
+
+   @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+   }
  }
