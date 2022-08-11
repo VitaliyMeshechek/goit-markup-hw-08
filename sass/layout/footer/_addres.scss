@@ -1,11 +1,10 @@
 .addres {
-  @media screen and (min-width: 480px) {
-     
-   }
-
     @media screen and (min-width: 768px) {
     @include centeredFlex(flex);
     flex-wrap: wrap; 
+    flex-direction: column;
+    margin-right: 165px;
+    margin-bottom: 60px;
    }
 
     @media screen and (min-width: 1200px) {
@@ -13,6 +12,7 @@
       margin-right: 70px;
       flex-direction: column;  
       align-items: baseline;
+      margin-bottom: 0;
    }
  }
  
@@ -59,11 +59,10 @@
    @media screen and (min-width: 480px) {
     display: block;
     text-align: center;
-
   }
 
   @media screen and (min-width: 768px) {
-    @include justFlex(flex);
+    @include justFlex(flex);  
   }
   
   @media screen and (min-width: 1200px) {
@@ -92,11 +91,12 @@
 
   @media screen and (min-width: 768px) {
     @include justFlex(flex);
-
+    justify-content: center;
   }
   
   @media screen and (min-width: 1200px) {
     @include justFlex(flex);
+    justify-content: start;
   }
 
    &:hover,
