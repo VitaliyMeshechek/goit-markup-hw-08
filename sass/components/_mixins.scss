@@ -5,8 +5,9 @@
 }
 
 @mixin justFlex($type) {
-   display: flex;
+   display: $type;
 }
+
 
 @mixin fonts($fs, $lh, $fw: 400, $ls: 0.03em) {
    font-weight: $fw;

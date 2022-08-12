@@ -64,6 +64,29 @@
    margin-right: 10px;
    fill: currentColor;
  }
+
+ .header-btn {
+  @include justFlex(inline-flex);
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+
+ }
+
+ .header-btn .header__icon-close {
+  opacity: 0;
+ }
+
+ .header-btn .is-open .header__icon-close {
+  opacity: 1;
+ }
+
+ .header-btn .is-open .header__icon-open {
+  opacity: 0;
+ }
+
  
 
  

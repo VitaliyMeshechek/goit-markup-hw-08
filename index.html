@@ -32,7 +32,7 @@
 
   <body data-page>
     <!-- Header section studio-->
-    <!-- <header class="header data-header">
+    <header class="header data-header">
       <div class="container header-container">
         <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo__span">Studio</span></a
@@ -48,6 +48,18 @@
             <li class="nav__item">
               <a class="nav__link" href="">Контакты</a>
             </li>
+            <button class="header-btn is-open data-modal-close" type="button">
+              <svg 
+                class="header__svg" 
+                width="40" 
+                height="40" 
+                aria-label="перемикач мобільного меню">
+                
+                <use class="header__icon-open" href="./images/icons/icons.svg#open"></use>
+                <use class="header__icon-close" href="./images/icons/icons.svg#close"></use>
+              </svg>
+
+            </button>
           </ul>
         </nav>
         <ul class="nav__list">
@@ -69,7 +81,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Main section studio-->
     <main class="main">
       <!-- Section Hero -->
@@ -703,7 +715,7 @@
     </footer>
 
     <!-- Modal window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    < <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
@@ -770,7 +782,7 @@
           <button class="register-form__button" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
   </body>

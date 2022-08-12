@@ -233,6 +233,28 @@ p {
   fill: currentColor;
 }
 
+.header-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.header-btn .header__icon-close {
+  opacity: 0;
+}
+
+.header-btn .is-open .header__icon-close {
+  opacity: 1;
+}
+
+.header-btn .is-open .header__icon-open {
+  opacity: 0;
+}
+
 .hero {
   background-color: var(--dark-bg-cl);
   padding-top: 200px;
