@@ -1,13 +1,39 @@
 .header {
-   padding-top: 24px;
-   padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
  
    background-color: var(--additional-bg-cl);
    border: 1px solid #ececec;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
  }
  
  .header-container {
-  @include centeredFlex(flex);
+  @include justFlex(flex);
+  align-items: center;
+  justify-content: start;
+  gap: 276px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+   display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+
+  }  
+ }
+
+ .container-menu {
+  display: flex;
  }
 
  .header-link-current {
