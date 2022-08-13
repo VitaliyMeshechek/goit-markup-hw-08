@@ -1,13 +1,19 @@
 .about {
+  @media screen and (max-width: 1199px) {
+    display: none; 
+    }
    padding-bottom: 94px; 
    background-color: var(--additional-bg-cl);
+   @media screen and (min-width: 1200px) {
+    display: flex; 
+    }
  }
  
  .about__title--indent {
   @include centeredFlex(flex);
-  @include fonts(36px, 42px, 700);
+  @include fonts(28px, 33px, 700);
    
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    text-align: center;
  }
  

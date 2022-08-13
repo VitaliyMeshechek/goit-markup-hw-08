@@ -1,13 +1,27 @@
 .team {
-   padding-top: 94px;
-   padding-bottom: 94px;
- 
-   background-color: var(--grey-bg-additional-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--grey-bg-additional-cl);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+ }
+
+ .team-container {
+  @include justFlex(flex);
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2);
+  }
  }
  
  .team__list {
   @extend %reset-list;
   @include justFlex(flex);
+  flex-direction: column;
 
    gap: 30px;
    margin: 0;
