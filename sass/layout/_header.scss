@@ -18,11 +18,8 @@
  }
  
  .header-container {
-    @include justFlex(flex);
-    align-items: center;
-    justify-content: start;
-    
-    // gap: 276px;
+  display: flex;
+  align-items: center;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     @include justFlex(flex);

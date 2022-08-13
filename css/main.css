@@ -13,7 +13,7 @@
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #e5e5e5;
   --blue-bg-cl: #2196f3;
-  --additional-bg-cl: #000000;
+  --additional-bg-cl: #ffffff;
   --grey-bg-additional-cl: #f5f4fa;
   /* others */
   --indent: 30px;
@@ -34,7 +34,7 @@
   margin: -1px;
 }
 
-.addres__link, .addres__link--color, .addres__link--wrap, .project__link, .nav__link--contacts, .nav__link, .logo, .mobile__social--link, .mobile__link--mail, .mobile__link--phone, .mobile__link, .mobile__link--color {
+.addres__link, .addres__link--color, .addres__link--wrap, .project__link, .nav__link--contacts, .nav__link--color, .nav__link, .logo, .mobile__social--link, .mobile__link--mail, .mobile__link--phone, .mobile__link, .mobile__link--color {
   text-decoration: none;
   color: currentColor;
 }
@@ -118,6 +118,7 @@ p {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  margin-left: 276px;
 }
 @media screen and (min-width: 480px) {
   .menu__btn {
@@ -272,7 +273,7 @@ p {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: var(--additional-bg-cl);
+  background-color: #FFFFFF;
   border: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -295,9 +296,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-container {
@@ -365,7 +363,7 @@ p {
   font-family: var(--secondary-font);
   color: var(--additional-txt-cl);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     margin-right: 87px;
   }

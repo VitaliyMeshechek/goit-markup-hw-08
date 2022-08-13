@@ -74,6 +74,10 @@
    }
  }
 
+ .nav__link--color {
+  @extend %reset-link;
+ }
+
  .nav__link--contacts {
   @extend %reset-link;
   @include justFlex(flex);
