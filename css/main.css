@@ -270,6 +270,19 @@ p {
   color: #2196F3;
 }
 
+.card-set-item {
+  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -844,25 +857,31 @@ p {
   font-size: 28px;
   line-height: 1.1785714286;
   letter-spacing: 0.03em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
-  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .about__title--indent {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .about__item {
   position: relative;
-}
-
-.about__img {
-  display: block;
 }
 
 .about__container {
@@ -908,40 +927,33 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-container {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
+  gap: var(--indent);
   margin: 0;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --items: 4;
+  }
 }
 
 .team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -951,6 +963,23 @@ p {
 
 .team__img {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .team__img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .team-wrapper {
@@ -1364,10 +1393,8 @@ p {
   color: var(--additional-txt-cl);
 }
 
-@media screen and (min-width: 480px) {
-  .contacts__container {
-    display: block;
-  }
+.contacts__container {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .contacts__container {
@@ -1553,16 +1580,13 @@ p {
   color: var(--additional-txt-cl);
 }
 
-@media screen and (min-width: 480px) {
-  .invitation {
-    display: block;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+.invitation {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .invitation {
-    display: block;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1657,10 +1681,8 @@ p {
   background-color: var(--blue-bg-cl);
 }
 
-@media screen and (min-width: 480px) {
-  .footer-form--container {
-    display: block;
-  }
+.footer-form--container {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .footer-form--container {
@@ -1720,11 +1742,9 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-form__container--group {
-    display: block;
-    text-align: center;
-  }
+.footer-form__container--group {
+  display: block;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-form__container--group {

@@ -1,7 +1,6 @@
 .footer-form--container {
-  @media screen and (min-width: 480px){
     display: block;
-  }
+
 
    @media screen and (min-width: 768px){
     @include justFlex(flex);
@@ -45,11 +44,9 @@
  }
  
  .footer-form__container--group {
-
-  @media screen and (min-width: 480px){
     display: block;
     text-align: center;
-  }
+
 
   @media screen and (min-width: 768px){
     display: block;

@@ -12,26 +12,28 @@
  .about__title--indent {
   @include centeredFlex(flex);
   @include fonts(28px, 33px, 700);
-   
-   margin-bottom: 30px;
-   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+
+   @media screen and (min-width: 1200px) {
+    @include fonts(28px, 33px, 700);
+    margin-bottom: 50px;
+  }
  }
  
  .about__list {
   @extend %reset-list; 
   @include justFlex(flex);
 
-   gap: 30px;
+   gap: var(--indent);
    margin-top: 0;
    margin-bottom: 0;
  }
  
  .about__item {
    position: relative;
- }
- 
- .about__img {
-   display: block;
  }
  
  .about__container {
