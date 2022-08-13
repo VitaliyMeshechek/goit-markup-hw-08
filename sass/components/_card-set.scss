@@ -6,3 +6,7 @@
    display: flex;
    flex-wrap: wrap;
   }
+
+  .card-set-project {
+   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }

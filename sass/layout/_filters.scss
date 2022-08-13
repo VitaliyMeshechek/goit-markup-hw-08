@@ -1,10 +1,24 @@
 .filters {
   @extend %reset-list;
   @include centeredFlex(flex);
+  gap: 8px;
+  margin-top: 0;
 
-   gap: 8px;
-   margin-top: 0;
-   margin-bottom: 56px;
+  @media screen and (max-width: 480px) {
+    @include justFlex(flex);
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 91px;
+    width: 326px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
  }
  
  .filters__item {

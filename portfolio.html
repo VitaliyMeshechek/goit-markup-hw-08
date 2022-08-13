@@ -31,26 +31,45 @@
 
   <body>
     <!-- Header portfolio-->
-    <header class="header">
+    <header class="header data-header">
       <div class="container header-container">
-        <a class="logo" href="./portfolio.html" lang="en"
+        <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo__span">Studio</span></a
         >
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+        <button 
+        class="menu__btn"
+        aria-expanded="false" 
+        data-menu-open 
+        aria-controls="mobile-menu"
+        type="button">
+        <svg 
+          class="menu__svg" 
+          width="40" 
+          height="40" 
+          aria-label="перемикач мобільного меню">          
+          <use class="menu__icon--open" href="./images/icons/icons.svg#open"></use>
+        </svg>
+      </button>
+      </div>
+        <div class="container-menu">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія</a>
+              <a class="nav__link" href="">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link header-link-current" href="">Портфоліо</a>
+              <a class="nav__link--color header-link-current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="nav__list">
-          <li class="nav__item">
+      </div>
+      <div class="container-contacts">
+        <ul class="nav__list--contacts">
+          <li class="nav__item--contacts">
             <a class="nav__link--contacts" href="mailto:info@devstudio.com">
               <svg class="nav__icon--left" width="16" height="12">
                 <use href="./images/icons/icons.svg#envelope"></use>
@@ -58,7 +77,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="nav__item">
+          <li class="nav__item--contacts">
             <a class="nav__link--contacts" href="tel:+380961111111">
               <svg class="nav__icon--right" width="10" height="16">
                 <use href="./images/icons/icons.svg#smartphone"></use>
@@ -67,6 +86,7 @@
             >
           </li>
         </ul>
+      </div>
       </div>
     </header>
     <!-- Main section portfolio-->
@@ -80,7 +100,7 @@
                 type="button"
                 class="filters__button animate__animated animate__bounce animate__slow"
               >
-                Все
+                Усі
               </button>
             </li>
             <li class="filters__item">
@@ -116,8 +136,8 @@
               </button>
             </li>
           </ul>
-          <ul class="project">
-            <li class="project__item">
+          <ul class="project__list">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -129,7 +149,7 @@
                   ./project\img-1-708.png.jpg 708w,
                   ./project\img-1-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img.jpg"
                 alt="Технокряк"
@@ -150,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -162,7 +182,7 @@
                   ./project\img-2-708.png.jpg 708w,
                   ./project\img-2-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img2.jpg"
                 alt="Постер New Orlean vs Golden Star"
@@ -183,7 +203,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -195,7 +215,7 @@
                   ./project\img-3-708.png.jpg 708w,
                   ./project\img-3-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img3.jpg"
                 alt="Ресторан Seafood"
@@ -216,7 +236,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -228,7 +248,7 @@
                   ./project\img-4-708.png.jpg 708w,
                   ./project\img-4-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img4.jpg"
                 alt="Проект Prime"
@@ -250,7 +270,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -262,7 +282,7 @@
                   ./project\img-5-708.png.jpg 708w,
                   ./project\img-5-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img5.jpg"
                 alt="Проект Boxes"
@@ -283,7 +303,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -295,7 +315,7 @@
                   ./project\img-6-708.png.jpg 708w,
                   ./project\img-6-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img6.jpg"
                 alt="Inspiration has no Borders"
@@ -316,7 +336,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -328,7 +348,7 @@
                   ./project\img-7-708.png.jpg 708w,
                   ./project\img-7-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img7.jpg"
                 alt="Издание Limited Edition"
@@ -349,7 +369,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -361,7 +381,7 @@
                   ./project\img-8-708.png.jpg 708w,
                   ./project\img-8-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img8.jpg"
                 alt="Проект LAB"
@@ -382,7 +402,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item card-set-project">
               <a href="" class="project__link">
                 <div class="overlay">
                   <img
@@ -394,7 +414,7 @@
                   ./project\img-9-708.png.jpg 708w,
                   ./project\img-9-900.png.jpg 900w
                 "
-                class="about__img"
+                class="overlay__img"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                 src="imaiges/portfolio/img9.jpg"
                 alt="Growing Business"

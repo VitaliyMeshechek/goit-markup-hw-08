@@ -1,10 +1,20 @@
-.project {
+.project__list {
   @extend %reset-list;
   @include justFlex(flex);
   
    flex-wrap: wrap;
    gap: var(--indent);
    margin-top: 0;
+
+   --items: 1;
+
+   @media screen and (min-width: 768px) {
+     --items: 2;
+   }
+ 
+   @media screen and (min-width: 1200px) {
+     --items: 3;
+   }
  }
  
  .project__item {
