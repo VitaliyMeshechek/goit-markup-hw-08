@@ -1,6 +1,10 @@
 .button-plane {
   @include fonts(16px, 30px, 700, 0.06em);
-
+  @include justFlex(flex);
+ 
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
    padding: 10px 28px;
    width: 200px;
    height: 50px;
@@ -12,22 +16,7 @@
    background-color: var(--blue-bg-cl);
    gap: 10px;
 
-   @media screen and (min-width: 480px) {
-    @include justFlex(flex);
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    @include justFlex(flex);
-    margin-top: 20px;
-  }
-
   @media screen and (min-width: 1200px){
-    @include justFlex(flex);
     margin-top: 0;
-
-
   }
  }

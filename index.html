@@ -32,17 +32,14 @@
 
   <body data-page>
     <!-- Header section studio-->
-    <header class="header data-header">
+    <header class="header" data-header>
       <div class="container header-container">
         <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo__span">Studio</span></a
         >
-        <div class="mobile-menu" id="mobile-menu" data-menu>
         <button 
-        class="menu__btn"
-        aria-expanded="false" 
+        class="menu__btn" 
         data-menu-open 
-        aria-controls="mobile-menu"
         type="button">
         <svg 
           class="menu__svg" 
@@ -52,7 +49,6 @@
           <use class="menu__icon--open" href="./images/icons/icons.svg#open"></use>
         </svg>
       </button>
-      </div>
         <div class="container-menu">
         <nav class="nav">
           <ul class="nav__list">
@@ -846,11 +842,10 @@
 
    <!-- Mobile menu -->
 
-   <div class="container mobile-overlay" data-menu">
+   <div class="mobile-overlay" data-menu">
     <div class="mobile-container">
       <button 
-      class="menu__btn"
-      aria-expanded="false" 
+      class="menu__btn" 
       data-menu-close 
       type="button">
       <svg 
@@ -862,10 +857,10 @@
         <use class="menu__icon--close" href="./images/icons/icons.svg#close"></use>
       </svg>
     </button>
-    <div class="mobile-menu" id="mobile-menu" data-menu></div>
+    <!-- <div class="mobile-menu" id="mobile-menu" data-menu></div> -->
       <ul class="mobile__list">
         <li class="mobile__item">
-          <a href="" class="mobile__link--color">Студія</a>
+          <a href="" class="mobile__link">Студія</a>
         </li>
         <li class="mobile__item">
           <a href="" class="mobile__link">Портфоліо</a>
@@ -901,6 +896,6 @@
 
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/btn.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

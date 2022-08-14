@@ -22,8 +22,8 @@
    position: absolute;
    top: 50%;
    left: 50%;
+   min-height: 609px;
    transform: translate(-50%, -50%) scale(1) rotate(0);
-   min-height: 581px;
    padding: 40px;
    background-color: var(--additional-bg-cl);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,6 +32,15 @@
    opacity: 1;
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms,
      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+
+     @media screen and (max-width: 1199px) {
+      max-width: 450px;
+    }
+
+     @media screen and (min-width: 1200px) {
+      width: 528px;
+      min-height: 581px;
+    }
  }
  
  .backdrop.is-hidden .modal {
@@ -104,7 +113,7 @@
 
 .register-form__input {
   height: 40px;
-  width: 448px;
+  width: 370px;
   padding-left: 40px;
   padding-right: 5px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -120,6 +129,10 @@
 &:focus + .register-form__icon,
 &:hover + .register-form__icon {
   fill: var(--blue-bg-cl);
+}
+
+@media screen and (mix-width: 1200px) {
+  width: 448px;
 }
 }
 
@@ -163,7 +176,7 @@
 
   margin-top: 20px;
   margin-bottom: 30px;
-  gap: 9px;
+  gap: 8px;
 }
 
 .register-form__input--checkbox:checked
@@ -186,16 +199,25 @@
 
 .register-form__span--checkbox {
   @include justFlex(flex);
-  @include fonts(14px, 24px);
-
+  @include fonts(12px, 14px);
+    
   color: var(--grey-txt-cl);
   user-select: none;
+
+  @media screen and (mix-width: 1200px) {
+    @include fonts(14px, 24px);
+  }
 }
 
 .register-form__link {
   margin-left: 3px;
+  @include fonts(12px, 14px);
   color: var(--additional-txt-cl);
   text-underline-position: under;
+
+  @media screen and (mix-width: 1200px) {
+    @include fonts(14px, 24px);
+  }
 }
 
 .register-form__button {

@@ -11,19 +11,8 @@
  }
  
  .clients__container {
-    @media screen and (min-width: 480px) {
     @include centeredFlex(flex);
-    flex-wrap: wrap; 
-   }
-
-    @media screen and (min-width: 768px) {
-    @include justFlex(flex);
-    flex-wrap: wrap;
-   }
-
-    @media screen and (min-width: 1200px) {
-    @include centeredFlex(flex);
-   }  
+    flex-wrap: wrap;  
  }
  
  .clients__title--indent {
@@ -40,24 +29,14 @@
  
  .clients__list {
     @extend %reset-list;
-    @media screen and (min-width: 480px) {
     @include centeredFlex(flex);
     flex-wrap: wrap;
-    gap: 30px;
-   }
-   
+    gap: var(--indent);   
  }
  
  .clients__item {
-    @media screen and (min-width: 480px) {
-    @include justFlex(flex);
-      flex-wrap: wrap;  
-     }
-
-     @media screen and (min-width: 768px) {
-     @include justFlex(flex);
-      flex-wrap: wrap;
-     }
+  @include justFlex(flex);
+  flex-wrap: wrap;
  }
  
  .clients__link {
