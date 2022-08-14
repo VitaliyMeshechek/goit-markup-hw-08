@@ -3,6 +3,7 @@
   @include centeredFlex(flex);
   gap: 8px;
   margin-top: 0;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 480px) {
     @include justFlex(flex);
