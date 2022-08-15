@@ -1,8 +1,10 @@
 .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
     background-color: var(--additional-bg-cl);
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
     @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -17,11 +19,13 @@
  
  .clients__title--indent {
     @include centeredFlex(flex);
-    @include fonts(28px, 33px, 700);
-    margin-bottom: 30px;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      @include fonts(28px, 33px, 700);
+      margin-bottom: 30px;
+     }
 
     @media screen and (min-width: 1200px) {
-    @include centeredFlex(flex);
     @include fonts(36px, 42px, 700);
     margin-bottom: 50px;
    }  

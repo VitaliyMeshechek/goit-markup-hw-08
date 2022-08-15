@@ -6,8 +6,8 @@
    background-repeat: no-repeat;
    background-position: center;
    max-width: 1600px;
-   margin-left: auto;
-   margin-right: auto;
+  //  margin-left: auto;
+  //  margin-right: auto;
 
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url(..//images/Hero/img1@1x-sm.jpg);
@@ -46,10 +46,10 @@
  }
  
  .hero__title {
+   margin-bottom: 30px;
+   text-align: center;
+   color: var(--white-txt-cl);
   @include fonts(26px, 42px, 900, 0.06em);
-  margin-bottom: 30px;
-  text-align: center;
-  color: var(--white-txt-cl);
 
   @media screen and (min-width: 1200px) {
     @include fonts(44px, 60px, 900, 0.06em);

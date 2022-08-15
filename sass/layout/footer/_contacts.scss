@@ -11,7 +11,9 @@
  }
  
  .contacts__container {
-      display: block; 
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+  } 
 
     @media screen and (min-width: 768px) {
     @include centeredFlex(flex);
@@ -22,7 +24,6 @@
 
     @media screen and (min-width: 1200px) {
       @include justFlex(flex);
-  
       align-items: baseline;
    }
 

@@ -14,11 +14,13 @@
   @include fonts(28px, 33px, 700);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+   margin-bottom: 30px;
+  }
 
    @media screen and (min-width: 1200px) {
-    @include fonts(28px, 33px, 700);
+    @include fonts(36px, 42px, 700);
     margin-bottom: 50px;
   }
  }
