@@ -50,4 +50,8 @@
    top: 51px;
    background-color: var(--blue-bg-cl);
    border-radius: 2px;
+
+   @media screen and (min-width: 1200px) {
+    top: 43px;
+   }
  }

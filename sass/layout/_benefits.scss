@@ -14,16 +14,6 @@
   @include justFlex(flex);
 }
 
-// .benefits__container {
-//   @media screen and (min-width: 320px) and (max-width: 479px) {
-//     display: block;
-//   }
-
-//   @media screen and (min-width: 480px) {
-//     @include justFlex(flex);
-//   }
-// }
-
 .benefits__list {
  @extend %reset-list;
  @include centeredFlex(flex);
@@ -56,11 +46,11 @@
   background-color: var(--additional-bg-cl);
   @include centeredFlex(flex);
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: 100%;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    min-width: 100%;
   }
   
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 354px;
   }
 
